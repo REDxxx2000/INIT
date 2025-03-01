@@ -25,6 +25,36 @@ ctry = this.document.getElementById('txtCtry');
   form.action="";
   btn.onclick="valUsr();";
 }
+function editTxt(){
+  mail = this.document.getElementById('txtMail');
+  nam = this.document.getElementById('txtNam');
+  txt = this.document.getElementById('txtMesssage');
+  ctry = this.document.getElementById('txtCtry');
+  
+
+  form = this.document.getElementById('formula');
+
+  btn = this.document.getElementById('validd');
+  btn1 = this.document.getElementById('editt');
+  dx1 = this.document.getElementById('delX1');
+  dx2 = this.document.getElementById('delX2');
+  dx3 = this.document.getElementById('delX3');
+  dx4 = this.document.getElementById('delX4');
+
+
+  //alert('');
+  
+  dx3.style.cssText="display:box;";
+  dx4.style.cssText="display:box;";
+ 
+  btn.style.cssText="display:box;";
+  btn1.style.cssText="display:none;";
+  
+  txt.disabled=false;
+  ctry.disabled=false;
+  
+  
+}
 function valUsr(){
   
   mail = this.document.getElementById('txtMail');
@@ -49,7 +79,8 @@ function valUsr(){
     //alert(mm+'  valores '+nn+'  valores '+ms+'  valores '+cc);
     if(mm=='mail'&&nn=='txt'&&ms=='txt'&&cc=='txt'){
       alert('Sent correctly');    
-      form.action="letContact.php";
+          form.action="letContact.php";
+          form.method="post";
           btn.onclick="";
           btn.type="submit";
           btn.focus();

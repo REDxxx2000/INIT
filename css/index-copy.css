@@ -76,6 +76,41 @@
 }body html{
     overflow:hidden;
     
+}body::before {
+
+  content: url('/images/1.jpg');
+  content: url('/images/2.jpeg');
+  content: url('/images/3.jpg');
+  content: url('/images/4.jpg');
+  content: url('/images/5.jpg');
+  content: url('/images/6.jpg');
+  content: url('/images/7.jpg');
+  content: url('/images/8.jpg');
+  content: url('/images/cleen.jpg');
+  content: url('/images/cleen1.jpg');
+  content: url('/images/cleen3.jpg');
+  content: url('/images/cleen4.jpg');
+  content: url('/images/cleen5.jpg');
+  content: url('/images/cleen6.jpg');
+  content: url('/images/ecur.jpg');
+  content: url('/images/ecur1.jpg');
+  content: url('/images/ecur2.jpg');
+  content: url('/images/ecur3.jpg');
+  content: url('/images/free1.jpg');
+  content: url('/images/free.jpg');
+  content: url('/images/logo.png');
+  content: url('/images/mine1.jpg');
+  content: url('/images/mine.jpg');
+  content: url('/images/usr.jpg');
+  content: url('/images/usr1.jpg');
+  content: url('/images/normac.jpg');
+  content: url('/images/normac1.jpg');
+  content: url('/images/normac2.jpg');
+  content: url('/images/normac3.jpg');
+  content: url('/images/normac4.jpg');
+
+  display: none;
+
 }
 #backG{
     

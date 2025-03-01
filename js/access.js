@@ -16,6 +16,7 @@ var mail = this.document.getElementById('txtMail');
       function valUsr(){
         mail = this.document.getElementById('txtMail');
         pass = this.document.getElementById('txtPass');
+        
         cont=0;
         
         if(mail.value!=''&&pass.value!=''){
