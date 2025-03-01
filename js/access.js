@@ -25,7 +25,8 @@ var mail = this.document.getElementById('txtMail');
           //alert(mm+' match valores '+pp);
           if(mm=='mail'&&pp=='pass'){
             alert('Correct log in');
-            form.action="/accessV/index.php";
+            form.action="/php/index.php";
+            form.method="post";
             btn.onclick="";
             btn.focus();}else{
               //alert('Valores no coinciden');

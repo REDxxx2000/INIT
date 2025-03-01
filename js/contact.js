@@ -50,6 +50,7 @@ function valUsr(){
     if(mm=='mail'&&nn=='txt'&&ms=='txt'&&cc=='txt'){
       alert('Sent correctly');    
       form.action="contact.php";
+      form.method="post";
           btn.onclick="";
           btn.type="submit";
           btn.focus();

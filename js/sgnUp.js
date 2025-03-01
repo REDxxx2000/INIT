@@ -60,7 +60,8 @@
           //alert(mm+'  valores '+pp+'  valores '+nn+'  valores '+aa+'  valores '+cc+'  valores '+usr);
           if(mm=='mail'&&pp=='pass'&&nn=='txt'&&aa=='nmbr'&&cc=='txt'&&usr=='pass'){
                 alert('Registered correctly');
-                form.action="/accessV/index.php";
+                form.action="/php/index.php";
+                form.method="post";
                 btn.onclick="";
                 btn.type="submit";
                 btn.focus();
