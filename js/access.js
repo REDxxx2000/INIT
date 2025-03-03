@@ -145,12 +145,13 @@ var mail = this.document.getElementById('txtMail');
         
       }
 
-      function forPass(){
-        
+      function forPassw(){
         pass = this.document.getElementById('fPass');
+        alert('llega');
         pass.onclick="";
-        pass.href="forPass.html";
+        pass.href="forPass.php";
         pass.focus();
+        pass.click();
 
       }
       function noCharMail(e){

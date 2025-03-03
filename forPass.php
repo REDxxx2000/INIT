@@ -128,28 +128,15 @@ if($_POST!=null){
         
         
         <label for="txtMail" class="form-label">
-            Email </label>&emsp;<a id="delX" class="btn" onclick="inputX('mail');">X</a>
+            Write your e-mail </label>&emsp;<a id="delX" class="btn" onclick="inputX('mail');">X</a>
         <input id="txtMail" class="form-control" 
         type="email" placeholder="Insert your e-mail" 
         aria-label="default input example" onkeypress="return noCharMail(event);" onkeydown="return noCharMail(event);" minlength="5" maxlength="40"   required><!--pattern="[A-Za-z0-9_]{,30}[@]{1,1}[a-zA-Z0-9]{,30}[.]{1,1}[a-zA-Z0-9]{3,5} "-->
         
         
-    
-    
-        
-        <label for="txtPass" class="form-label">
-            Password</label> &emsp;<a id="delX" class="btn" onclick="inputX('pass');">X</a>   
-        <input id="txtPass" class="form-control" 
-        type="password" placeholder="Only letters and numbers." 
-        aria-label="default input example" onkeypress="return noCharPass(event);" onkeydown="return noCharPass(event);"  minlength="8" maxlength="20"  required/><!--pattern="[A-Za-z0-9]{,15} -->
-        </input>
-        
         <br>
-        <center><input id="validd" type="submit" class="btn" onclick="valUsr();" onfocus="valUsr();" value="Submit"></input></center>   
-        <br>
-        <a id="fPass" onclick="forPass();" onfocus="forPass();" class="link-dark link-underline-opacity-65 link-underline-opacity-25-hover link-opacity-25-hover link-offset-3">Did you forgot your password?</a>
+        <center><input id="validd" type="submit" class="btn" onclick="sendPass();" onfocus="sendPass();" value="Send"></input></center>   
         
-        <br>
         </form>
         
 

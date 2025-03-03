@@ -1,4 +1,49 @@
-<?php session_start();?>
+
+<?php
+session_start();
+$pos = null;
+$usr = null;
+$age = null;
+$mail = null;
+$ctry = null;
+$pass = null;
+?>
+<?php
+if($_SESSION!=null&&$_COOKIE!=null){
+  $pos = true;
+  $nam = $_SESSION['txtNam'];
+  $usr =$_SESSION['txtUsr'];
+  $age =$_SESSION['txtAge'];
+  $mail =$_SESSION['txtMail'];
+  $ctry =$_SESSION['txtCtry'];
+  $pass =$_SESSION['txtPass'];
+
+}else{}
+if($_POST!=null){
+  $pos = true;
+  $nam = $_POST['txtNam'];
+  $usr =$_POST['txtUsr'];
+  $age =$_POST['txtAge'];
+  $mail =$_POST['txtMail'];
+  $ctry =$_POST['txtCtry'];
+  $pass =$_POST['txtPass'];
+
+  $_SESSION['txtNam']=$nam ;
+  $_SESSION['txtUsr']=$usr ;
+  $_SESSION['txtAge']=$age ;
+  $_SESSION['txtMail']=$mail ;
+  $_SESSION['txtCtry']=$ctry ;
+  $_SESSION['txtPass']=$pass ;
+
+  $_COOKIE['txtNam']=$nam ;
+  $_COOKIE['txtUsr']=$usr ;
+  $_COOKIE['txtAge']=$age ;
+  $_COOKIE['txtMail']=$mail ;
+  $_COOKIE['txtCtry']=$ctry ;
+  $_COOKIE['txtPass']=$pass ;
+
+}else{}
+?>
 <!DOCTYPE html>
 <html lang="en" ondrag="return false;" ondragenter="return false;" ondragleave="return false;" ondragend="return false;" ondragover="return false;" 
 ondragstart="return false;" ondrop="return false;" onscroll="return false;">
